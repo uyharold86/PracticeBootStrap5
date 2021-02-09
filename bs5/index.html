@@ -5,11 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BootStrap5 CrashCourse</title>
 
+
+
+    <style>
+        [class*="col"] {
+            padding:1rem;
+            background-color: #33b5e5;
+            border:2px solid #fff;
+            color: #fff;
+            text-align: center;
+
+        }
+            [class*="con"] {
+            padding:1rem;
+            background-color: #9e33e5;
+            border:2px solid #fff;
+            color: #fff;
+            text-align: center;
+            
+        }
+    </style>
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
+    <!--
+        container-fluid strethces to the edge of the screen
+        container-md will only take on the full witdh until it hits the breakpoint for small screens and normal(container) for medium to large screens
+        if column size isnt specified it will only show 1 contonuous bar
+    -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">1</div>
+            <div class="col-sm">2</div>
+            <div class="col-sm">3</div>
+        </div>
+        <div class="row">
+            <div class="col-sm">1</div>
+            <div class="col-sm">2</div> 
+        </div>
+    </div>
+    <!--
+        this is an example of a container with a defined size
+    -->
+    <div class="container">
+        <div class="row">
+           <div class="col-md-8">Main Content</div>   
+            <div class="col-md-4">Sidebar</div>
+        </div>
+    </div>
+
+    <h2>Gutter</h2>
+    <!--guttter 
+        (gx) is for X-axis
+        (gy) for Y-axis
+    -->
+    <div class="container px-4">
+        <div class="row gx-2">
+            <div class="col">
+                <div class="p-3 border">Custom Column padding</div>
+            </div>
+            <div class="col">
+                <div class="p-3 border">Custom column padding</div>
+            </div>
+        </div>
+    </div>
     
-    <h1>Hello World BootStrap Practice</h1>
+    <div class="container">
+        <div class="row gy-1">
+            <div class="col-6">1</div>
+            <div class="col-6">2</div>
+            <div class="col-6">3</div>
+            <div class="col-6">4</div>
+        </div>
+    </div>
 
 
     <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
