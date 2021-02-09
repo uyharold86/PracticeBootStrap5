@@ -6,79 +6,106 @@
     <title>BootStrap5 CrashCourse</title>
 
 
-
-    <style>
-        [class*="col"] {
-            padding:1rem;
-            background-color: #33b5e5;
-            border:2px solid #fff;
-            color: #fff;
-            text-align: center;
-
-        }
-            [class*="con"] {
-            padding:1rem;
-            background-color: #9e33e5;
-            border:2px solid #fff;
-            color: #fff;
-            text-align: center;
-            
-        }
-    </style>
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-    <!--
-        container-fluid strethces to the edge of the screen
-        container-md will only take on the full witdh until it hits the breakpoint for small screens and normal(container) for medium to large screens
-        if column size isnt specified it will only show 1 contonuous bar
-    -->
     <div class="container">
-        <div class="row">
-            <div class="col-sm">1</div>
-            <div class="col-sm">2</div>
-            <div class="col-sm">3</div>
-        </div>
-        <div class="row">
-            <div class="col-sm">1</div>
-            <div class="col-sm">2</div> 
-        </div>
-    </div>
-    <!--
-        this is an example of a container with a defined size
-    -->
-    <div class="container">
-        <div class="row">
-           <div class="col-md-8">Main Content</div>   
-            <div class="col-md-4">Sidebar</div>
-        </div>
-    </div>
+<!--This is a list of the varoius buttons-->
+        <h1>Buttons</h1>
 
-    <h2>Gutter</h2>
-    <!--guttter 
-        (gx) is for X-axis
-        (gy) for Y-axis
-    -->
-    <div class="container px-4">
-        <div class="row gx-2">
-            <div class="col">
-                <div class="p-3 border">Custom Column padding</div>
-            </div>
-            <div class="col">
-                <div class="p-3 border">Custom column padding</div>
-            </div>
-        </div>
-    </div>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn light">Light</button>
+        <button type="button" class="btn btn dark">Dark</button>
+
+        <button type="button" class="btn btn-link">Link</button>
+       
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+
+        <button type="button" class="btn btn-outline-primary btn-lg">Primary XL</button>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-primary btn-sm">Primary sm</button>
+        <button type="button" class="btn btn-outline-primary" disabled>Primary</button>
     
-    <div class="container">
-        <div class="row gy-1">
-            <div class="col-6">1</div>
-            <div class="col-6">2</div>
-            <div class="col-6">3</div>
-            <div class="col-6">4</div>
-        </div>
-    </div>
+        <hr>
 
+        <h1>Cards</h1>
+<!--Cards by default will take the full width available-->
+        <div class="card">
+            <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae volutpat nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi sapien sapien, rutrum vitae mauris eget, pellentesque iaculis nunc. Mauris convallis sagittis efficitur. Nam quis rhoncus metus. Pellentesque feugiat orci quis odio luctus finibus. Nam tristique est id iaculis imperdiet. Integer in lectus faucibus turpis imperdiet porttitor id congue massa. Praesent rhoncus interdum mi, eget consectetur mauris commodo et. Ut facilisis luctus eros, vitae lobortis mauris lobortis non. Pellentesque ligula mi, suscipit aliquet urna sed, suscipit sollicitudin ante.
+
+            </div>
+
+        </div>
+<!--this portion will show how to resie a card
+    rem traditional method not very efficient as compared to using grids
+-->
+        <div class="card" style="width: 18rem">
+            <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae volutpat nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi sapien sapien, rutrum vitae mauris eget, pellentesque iaculis nunc. Mauris convallis sagittis efficitur. Nam quis rhoncus metus. Pellentesque feugiat orci quis odio luctus finibus. Nam tristique est id iaculis imperdiet. Integer in lectus faucibus turpis imperdiet porttitor id congue massa. Praesent rhoncus interdum mi, eget consectetur mauris commodo et. Ut facilisis luctus eros, vitae lobortis mauris lobortis non. Pellentesque ligula mi, suscipit aliquet urna sed, suscipit sollicitudin ante.
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card" >
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae volutpat nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi sapien sapien, rutrum vitae mauris eget, pellentesque iaculis nunc. Mauris convallis sagittis efficitur. Nam quis rhoncus metus. Pellentesque feugiat orci quis odio luctus finibus. Nam tristique est id iaculis imperdiet. Integer in lectus faucibus turpis imperdiet porttitor id congue massa. Praesent rhoncus interdum mi, eget consectetur mauris commodo et. Ut facilisis luctus eros, vitae lobortis mauris lobortis non. Pellentesque ligula mi, suscipit aliquet urna sed, suscipit sollicitudin ante.
+        
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+<!--this will show examples of marjins
+    mt-1 is margin top spacing 1
+    my-2 is margin vertical spacing(top & bottom)  spacing 2
+
+-->
+        <div class="card my-3" style="width: 18rem">
+            <img class="card-img-top"src="test_img.jpg" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae volutpat nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi sapien sapien, rutrum vitae mauris eget, pellentesque iaculis nunc. Mauris convallis sagittis efficitur. Nam quis rhoncus metus. Pellentesque feugiat orci quis odio luctus finibus. Nam tristique est id iaculis imperdiet. Integer in lectus faucibus turpis imperdiet porttitor id congue massa. Praesent rhoncus interdum mi, eget consectetur mauris commodo et. Ut facilisis luctus eros, vitae lobortis mauris lobortis non. Pellentesque ligula mi, suscipit aliquet urna sed, suscipit sollicitudin ante.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="card mb 3" style="max-width: 540px;">
+            <div class="row g 0">
+                <div class="col-md-4">
+                    <img class="img-fluid"src="test_img-2.jpg" alt="">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text"> 
+                            This is a wider card with supporting text below as a ..... 
+                         </p>
+                         <p class="card-text"><small class="text-muted">Last updated 3 min ago</small></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
     <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
